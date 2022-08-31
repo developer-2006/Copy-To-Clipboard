@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: tahoma;
+}
+
+body {
+  background: #03a9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.box {
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box :where(textarea, button) {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.box textarea {
+  border: 1px solid #999;
+  resize: vertical;
+}
+
+::selection {
+  background: #03a9f4;
+  color: #fff;
+}
+
+.box button {
+  background: #b3e5fc;
+  transition: all 2s;
+  font-family: "Lalezar";
+}
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 650px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
